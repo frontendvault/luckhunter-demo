@@ -1,0 +1,280 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+/* @import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap'); */
+p,
+ul {
+  @apply font-orbit;
+  font-family: 'Orbit', sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  @apply bg-black;
+}
+h1 {
+  line-height: 110px !important;
+}
+h1,
+h2 {
+  @apply text-4xl lg:text-[80px]  font-bold uppercase leading-normal;
+}
+h3 {
+  @apply text-[60px] uppercase font-bold;
+}
+
+h4 {
+  @apply text-[40px];
+}
+h6 {
+  @apply text-2xl uppercase font-bold;
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.container {
+  @apply lg:w-[1440px];
+}
+.text-yellow-custom {
+  color: rgba(255, 175, 58, 1);
+}
+.bg-yellow-custom {
+  background: rgba(255, 175, 58, 1);
+}
+.logo-bg {
+  background: url(/images/logo-bg.svg) no-repeat top left;
+}
+.special-text-yellow {
+  color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgba(255, 175, 58, 1);
+}
+.special-text {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+.night-sky-stars-bg {
+  background: url(/images/luckhunter-comparison-bg.png) no-repeat left center;
+  background-attachment: unset;
+  @apply bg-cover;
+}
+.night-bg {
+  background: url(/images/personalise-shaded-bg.png) no-repeat left center;
+  @apply bg-cover;
+}
+.comparison-bg {
+  background: url(/images/comparison-bg.png) no-repeat 0 0px;
+  padding-bottom: 300px;
+  @apply bg-cover;
+}
+.comparison-chart-bg {
+  background: url(/images/comparison-chart-bg.png) no-repeat center center;
+}
+.common-button {
+  box-shadow: 25px 25px 164px 0px rgba(0, 170, 255, 0.3) inset;
+  backdrop-filter: blur(64px);
+  @apply border border-sky-400 bg-gradient-to-r from-pink-600/60 via-purple-800 to-indigo-700/40 text-white;
+}
+.transparent-luminous-bg {
+  background: rgba(255, 255, 255, 0.01);
+  padding: 20px;
+}
+.casino-empire-bg {
+  background: url(/images/personalize-bg.png) no-repeat center center;
+  background-attachment: initial;
+  @apply bg-cover;
+}
+.casino-bg-shade {
+  background: url(/images/personalize-casino-item-bg.png) no-repeat center;
+  background-attachment: unset;
+}
+.banner-bg {
+  background: url(/images/banner-bg.svg) no-repeat left -180px;
+
+  @apply md:h-screen bg-cover;
+}
+
+.banner-btn-left {
+  background: url(/images/banner-btn-left.svg) no-repeat center center;
+}
+.banner-btn-right {
+  background: url(/images/banner-btn-right.svg) no-repeat center center;
+}
+.presale-bg {
+  background: url(/images/presale-bg.png) no-repeat center center;
+  background-attachment: unset;
+  @apply bg-cover;
+}
+.presale-form-bg {
+  background: url(/images/presale-form-bg.png) no-repeat center center;
+  background-attachment: unset;
+  @apply bg-cover;
+}
+.presale-item-bg {
+  background: url(/images/presale-item-bg.svg) no-repeat left center;
+}
+.presale-item-bg:hover {
+  background: url(/images/presale-item-bg-hover.svg) no-repeat left center;
+  @apply duration-300;
+}
+.casino-metaverse {
+  background: url(/images/casino-metverse-bg.png) no-repeat top center;
+  background-attachment: unset;
+  @apply bg-cover;
+}
+.metaverse-holder {
+  background: url(/images/casino-metverse-holder.png) no-repeat -70px -300px;
+  background-attachment: unset;
+  @apply p-4 flex items-center justify-center;
+}
+.metaverse-item {
+  background: url(/images/metaverse-item-bg.png) no-repeat center center;
+  background-attachment: unset;
+  @apply bg-cover;
+}
+.metaverse-item:hover:after {
+  background: url(/images/metaverse-item-hover.png) no-repeat bottom center;
+  background-attachment: unset;
+}
+.become-lockhunter-bg {
+  background: url(/images/lockhunter-bg.png) no-repeat center bottom;
+  background-attachment: unset;
+  background-size: cover;
+}
+.own-casino-itemn-bg {
+  background: url(/images/own-casino-itemn-bg.png) no-repeat top center;
+}
+.tabbed-main-bg {
+  background: url(/images/tabbed-main.png) no-repeat center center;
+}
+.tabbed-main-bg:hover {
+  background: url(/images/tabbed-main-hover.png) no-repeat center center;
+}
+
+.nested-tab-item-bg {
+  background: url(/images/nested-tabs-bg.svg) no-repeat center center;
+  background-attachment: unset;
+  @apply flex justify-center items-center;
+}
+.tokenomics-bg {
+  background: url(/images/tokenomics-bg-full.png) no-repeat 0 -100px;
+
+  @apply bg-cover;
+}
+.howit-works-bg,
+.explore-cities {
+  background: url(/images/presale-bg.png) no-repeat bottom center;
+  @apply bg-cover;
+}
+
+.howit-work-diagram {
+  background: url(/images/how-it-works-diagram.png) no-repeat 70px 300px;
+}
+.tokenomics-col {
+  @apply border-dashed border-white border-b pb-3;
+}
+/* .explore-iconic-cities-bg {} */
+.explore-cities .slick-slide {
+  @apply opacity-40;
+}
+.explore-cities .slick-current {
+  @apply opacity-100 
+  /* scale-125 md:h-[900px]; */;
+}
+
+.explore-iconic-cities-item {
+  background: url(/images/explore-city-bg.png) no-repeat top center;
+}
+/* .luckhunter-comparison-bg, */
+.footer-bg {
+  background: url(/images/footer-main-bg.png) no-repeat left bottom;
+  @apply bg-cover;
+}
+.footer-bg-section {
+  background: url(/images/footer-bg-section.svg) no-repeat top center;
+  @apply bg-cover;
+}
+.roadmap-col {
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(64px);
+}
+.luckhunter-card {
+  background: url(/images/luckhunter-item-bg.png) no-repeat top left;
+}
+.token-details {
+  background: url(/images/token-detail-bg.png) no-repeat top center;
+}
+.token-details-right {
+  background: url(/images/token-detail-right.png) no-repeat -40px -30px;
+}
+
+.token-details h4 {
+  @apply text-yellow-custom;
+}
+.exclusive-events .slick-current {
+  background: url(/images/carousel-item-bg.png) no-repeat -64px -62px;
+  @apply lg:h-[412px] lg:w-[880px];
+}
+.exclusive-events .slick-current {
+  @apply flex;
+}
+.roadmap-bg {
+  background: url(/images/road-map-bg.png) no-repeat center -200px;
+  background-attachment: initial;
+  @apply bg-cover;
+}
+.comparison-chart-bg table tr td:nth-child(2) {
+  @apply bg-blue-500;
+}
+.comparison-chart-bg table td div {
+  @apply mx-auto;
+}
+.big-button {
+  background: url(/images/btn-big-bg.svg) no-repeat center center;
+}
+.common-btn-md {
+  background: url(/images/common-btn-md.svg) no-repeat center center;
+}
+.explore-cities .slick-slider {
+  @apply relative;
+}
+.explore-cities .slick-next,
+.explore-cities .slick-prev {
+  @apply absolute bottom-0 right-0 left-0;
+}
+.roadmap-item-bg {
+  background: url(/images/roadmap-item-bg.svg) no-repeat top center;
+}
+.faq-bg {
+  background: url(/images/tokenomics-bg.png) no-repeat top center;
+  @apply bg-cover;
+}
+.faq-accordion-bg {
+  background: url(/images/faq-bg.png) no-repeat top left;
+}
+/* .faq-bg {box-shadow: 25px 25px 164px 0px #00AAFF4D%20inset;backdrop-filter:%20blur(64px)box-shadow:%200px%204px%2024px%200px%20#00000073;} */
+.common-blue-bg {
+  box-shadow: 25px 25px 164px 0px rgba(0, 170, 255, 0.3) inset;
+  backdrop-filter: blur(64px);
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {line-height: 40px!important;}
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    @apply text-3xl;
+  }
+  h6 {
+    @apply text-xl;
+  }
+}
